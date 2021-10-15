@@ -1,0 +1,11 @@
+footer {
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+  padding: 1rem;
+}
+footer > * {
+  flex-basis: 20%;
+}

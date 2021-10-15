@@ -1,0 +1,115 @@
+.appartements-list {
+  display: flex;
+  gap: 1rem;
+}
+.appartements-list div {
+  border-radius: 1rem;
+}
+.appartements-list .city {
+  flex-basis: 66%;
+  background-color: #dadada6c;
+}
+.appartements-list .city a {
+  font-weight: bold;
+}
+.appartements-list .popular {
+  flex-basis: 33%;
+  background-color: #dadada6c;
+}
+.city-appartement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.city-appartement-list div {
+  border: 1px;
+  flex-basis: calc(31% - 1rem);
+  flex-grow: 1;
+  min-width: 10rem;
+}
+.appartements-list .popular-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  border: 1px;
+}
+
+.appartement-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 16px #0000002e;
+  opacity: 0.9;
+  transition: transform 200ms;
+  flex-basis: 30%;
+}
+.appartement-card:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+.appartement-card img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+}
+.appartement-card p,
+.appartement-card h3 {
+  margin: 0.2rem;
+}
+.blue {
+  color: rgb(45, 45, 231);
+}
+.grey {
+  color: darkgray;
+}
+.popular {
+  display: flex;
+  flex-direction: column;
+}
+.popular-flex {
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+
+.appartement-card.popular-card img {
+  height: auto;
+  border-radius: 1rem 0 0 1rem;
+  width: 40%;
+  margin-right: 0.5rem;
+}
+.popular-description {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.popular-card {
+  display: flex;
+  max-height: 10rem;
+  min-width: 10rem;
+}
+.popular-card .stars {
+  margin-top: auto;
+}
+.popular h3 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .appartements-list {
+    flex-direction: column;
+  }
+  .appartements-list .popular-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .popular-card {
+    flex-basis: 30%;
+  }
+  .popular {
+    order: -1;
+  }
+}

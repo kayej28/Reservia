@@ -1,5 +1,7 @@
 @import url(./css/navbarre.css);
 @import url(./css/searchform.css);
+@import url(./css/popular.css);
+@import url(./css/footer.css);
 /* navbarr */
 
 :root {
@@ -15,7 +17,10 @@
 a {
   text-decoration: none;
 }
-.main {
+body {
+  margin: 0px;
+}
+main {
   max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
@@ -26,148 +31,77 @@ a {
   margin: 0.67em 0;
 }
 
-.filtrerecherche {
-  display: flex;
-  align-items: center;
-  gap: 1rem 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-.fas.fa-money-bill-wave {
-  color: blue;
-  background-color: lightblue;
-  padding: 1rem;
-  border-radius: 50%;
-  margin: -2px;
-}
-.recherchecondition {
-  border: 2px solid lightgrey;
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  transition: all 200ms;
-}
-.fas.fa-child {
-  color: blue;
-  background-color: lightblue;
-  display: flex;
-  align-items: center;
+.activities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 5rem;
   justify-content: center;
-  border-radius: 50%;
-  margin: -2px;
-  width: 3rem;
-  height: 3rem;
 }
-.fas.fa-heart {
-  color: blue;
-  background-color: lightblue;
-  padding: 1rem;
-  border-radius: 50%;
-  margin: -2px;
+.activitemarseille {
+  padding: 2rem;
 }
-.fas.fa-dog {
-  color: blue;
-  background-color: lightblue;
-  padding: 1rem;
-  border-radius: 50%;
-  margin: -2px;
+.activities-list > * {
+  border: 1px;
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: transform 200ms;
+  min-width: 16rem;
 }
-.recherchecondition span {
-  font-weight: bold;
-  padding: 0 1rem;
-}
-.recherchecondition:hover {
-  background-color: var(--lighterblue);
+.activities-list > div:hover {
   transform: scale(1.02);
 }
-
-.resultatrecherche {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.big {
+  height: 30rem;
 }
-.resultatrecherche .fas {
-  color: blue;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid lightgrey;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.big1 {
+  grid-row: 1 / -1;
+  background-image: url("https://reservia.mathisbarre.com/img/activity/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
-.appartements-list {
-  display: flex;
-  gap: 1rem;
+.big2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+  background-image: url("https://reservia.mathisbarre.com/img/activity/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
-.appartements-list div {
-  border: 1px solid red;
+.medium1 {
+  grid-row: 1 /4;
+  background-image: url("https://reservia.mathisbarre.com/img/activity/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.medium2 {
+  grid-column: 4/-1;
+  grid-row: 3/-1;
+  background-image: url("https://reservia.mathisbarre.com/img/activity/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+.small1 {
+  grid-column: 2 / 2;
+  grid-row: 4 / -1;
+  background-image: url("https://reservia.mathisbarre.com/img/activity/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+.small2 {
+  grid-column: 4/4;
+  grid-row: 1 / 3;
+  background-image: url("https://reservia.mathisbarre.com/img/activity/small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+.activities-list h3 {
+  margin-top: auto;
+  margin-bottom: 0;
+  width: 100%;
   padding: 1rem;
-  border-radius: 1rem;
-}
-.appartements-list .city {
-  flex-basis: 66%;
-}
-.appartements-list .city a {
-  font-weight: bold;
-}
-.appartements-list .popular {
-  flex-basis: 33%;
-}
-@media (max-width: 800px) {
-  .appartements-list {
-    flex-direction: column;
-  }
-  .popular {
-    order: -1;
-  }
-}
-.city-appartement-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-around;
-  margin-bottom: 1rem;
-}
-.city-appartement-list div {
-  border: 1px solid blue;
-  flex-basis: calc(33% - 1rem);
-}
-.appartements-list .popular-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.appartements-list .popular-flex {
-  border: 1px solid blue;
-}
-.appartements-list h3 {
-  flex-basis: 100%;
-}
-@media (max-width: 800px) {
-  .appartements-list .popular-flex {
-    flex-direction: row;
-  }
-}
-
-.appartement-card {
   background-color: white;
-  border-radius: 1rem;
-  padding: 0, 5rem;
-  box-shadow: 0 0 16px #0000002e;
+  border-radius: 0 0 1rem 1rem;
 }
-.appartement-card img {
-  border-radius: 1rem 1rem 0rem 0rem;
-  height: 10rem;
-}
-.appartement-card p,
-.appartement-card h3 {
-  margin: 0, 2rem;
-}
-.blue {
-  color: rgb(45, 45, 231);
-}
-.grey {
-  color: darkgray;
+@media (max-width: 1100px) {
+  .activities-list {
+    grid-template-rows: repeat(auto-fit, 15rem);
+  }
+  .activities-list > * {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 15rem;
+  }
 }

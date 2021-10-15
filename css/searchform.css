@@ -1,44 +1,115 @@
 .search-form {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-  }
-  .search-form > * {
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-  }
-  .search-form i {
-    background-color: lightgray;
-    border-radius: 1rem 0 0 1rem;
-  }
-  .search-form input {
-    flex-basis: 16rem;
-    border: 1px solid var(--lightgray);
-    overflow: auto;
-  }
-  .search-form button {
-    background-color: rgb(45, 45, 231);
-    color: white;
-    font-weight: bold;
-    border-radius: 0 1rem 1rem 0;
-    border: none;
-    cursor: pointer;
-    opacity: 0, 9;
-    transition: transform 200ms;
-  }
-  .search-form button:hover {
-    opacity: 1;
-    transform: scale(1.03);
-  }
-  .fas.fa-search {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.search-form > * {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+.search-form i {
+  background-color: lightgray;
+  border-radius: 1rem 0 0 1rem;
+}
+.search-form input {
+  flex-basis: 16rem;
+  border: 1px solid var(--lightgray);
+  overflow: auto;
+}
+.search-form button {
+  background-color: rgb(45, 45, 231);
+  color: white;
+  font-weight: bold;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0, 9;
+  transition: transform 200ms;
+}
+.search-form button:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+.fas.fa-search {
+  display: none;
+}
+@media (max-width: 800px) {
+  .search-form .search-text {
     display: none;
   }
-  @media (max-width: 800px) {
-    .search-form .search-text {
-      display: none;
-    }
-    .fas.fa-search {
-      display: inline;
-      background-color: inherit;
-    }
+  .fas.fa-search {
+    display: inline;
+    background-color: inherit;
   }
+}
+.filtrerecherche {
+  display: flex;
+  align-items: center;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.fas.fa-money-bill-wave {
+  color: blue;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -2px;
+}
+.recherchecondition {
+  border: 2px solid lightgrey;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  transition: all 200ms;
+}
+.fas.fa-child {
+  color: blue;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: -2px;
+  width: 3rem;
+  height: 3rem;
+}
+.fas.fa-heart {
+  color: blue;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -2px;
+}
+.fas.fa-dog {
+  color: blue;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -2px;
+}
+.recherchecondition span {
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.recherchecondition:hover {
+  background-color: var(--lighterblue);
+  transform: scale(1.02);
+}
+
+.resultatrecherche {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.resultatrecherche .fas {
+  color: blue;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

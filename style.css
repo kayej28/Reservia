@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap");
 @import url(./css/navbarre.css);
 @import url(./css/searchform.css);
 @import url(./css/popular.css);
@@ -9,6 +10,9 @@
   --lighterblue: #f3f8ff;
   --lightgray: #f2f2f2;
 }
+html {
+  scroll-behavior: smooth;
+}
 .header {
   max-width: 1440px;
   margin: auto;
@@ -19,6 +23,7 @@ a {
 }
 body {
   margin: 0px;
+  font-family: "Raleway", "sans-serif";
 }
 main {
   max-width: 1440px;
@@ -37,10 +42,10 @@ main {
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 1rem;
   margin-bottom: 5rem;
-  justify-content: center;
+  justify-content: space-between;
 }
 .activitemarseille {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .activities-list > * {
   border: 1px;
@@ -61,31 +66,31 @@ main {
 }
 .big1 {
   grid-row: 1 / -1;
-  background-image: url("https://reservia.mathisbarre.com/img/activity/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-image: url("./assets/vieux-port.jpg");
 }
 .big2 {
   grid-column: 3 / 4;
   grid-row: 1 / -1;
-  background-image: url("https://reservia.mathisbarre.com/img/activity/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-image: url("./assets/parc-national-des-calanques.jpg");
 }
 .medium1 {
   grid-row: 1 /4;
-  background-image: url("https://reservia.mathisbarre.com/img/activity/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-image: url("./assets/fort-de-promegue.jpg");
 }
 .medium2 {
   grid-column: 4/-1;
   grid-row: 3/-1;
-  background-image: url("https://reservia.mathisbarre.com/img/activity/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-image: url("./assets/parc-longchamp.jpg");
 }
 .small1 {
   grid-column: 2 / 2;
   grid-row: 4 / -1;
-  background-image: url("https://reservia.mathisbarre.com/img/activity/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-image: url("./assets/ile-dufrioul.jpg");
 }
 .small2 {
   grid-column: 4/4;
   grid-row: 1 / 3;
-  background-image: url("https://reservia.mathisbarre.com/img/activity/small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-image: url("./assets/notre-dame.jpg");
 }
 .activities-list h3 {
   margin-top: auto;

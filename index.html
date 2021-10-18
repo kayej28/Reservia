@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
     <script src="https://kit.fontawesome.com/1122e574af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -11,8 +15,8 @@
         <nav class="navbarre">
             <img class="headerImg" src="./Reservia@3x.png" alt="reservia,logo">
             <div class="sub-nav">
-                <a class="navlink" href="#main-accommodation" data-active="false">Hebergements</a>
-                <a class="navlink" href="#main-activity" data-active="false">Activites</a>
+                <a class="navlink" href="#appartements-list" data-active="false">Hebergements</a>
+                <a class="navlink" href="#activitemarseille" data-active="false">Activites</a>
             </div>
             <a class="navheader" href="#">S'inscrire</a>
         </nav>
@@ -26,7 +30,7 @@
             </header>
             <div class="search-form">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="texte" placeholder="Marseille, France">
+                <input type="text" placeholder="Marseille, France">
                 <button>
                     <span class="search-text">recherche</span>
                     <i class="fas fa-search"></i>
@@ -35,25 +39,25 @@
             <div class="filtrerecherche">
                 <h2 class="filtrerecherchetitre">Filtres</h2>
                 <div class="recherchecondition">
-                    <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
                     <span class="rechercheconomie">Economique</span>
                 </div>
                 <div class="recherchecondition">
-                    <i class="fas fa-child searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                    <i class="fas fa-child" aria-hidden="true"></i>
                     <span class="recherchefamilial">Familial</span>
                 </div>
                 <div class="recherchecondition">
-                    <i class="fas fa-heart searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                    <i class="fas fa-heart" aria-hidden="true"></i>
                     <span class="rechercheromantique">Romantique</span>
                 </div>
                 <div class="recherchecondition">
-                    <i class="fas fa-dog searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                    <i class="fas fa-dog" aria-hidden="true"></i>
                     <span class="rechercheanimaux">Animaux autorises</span>
                 </div>
             </div>
             <div class="resultatrecherche">
                 <div class="searchResultWrapicon">
-                    <i class="fas fa-info searchResultWrapiconIcon" aria-hidden="true">
+                    <i class="fas fa-info" aria-hidden="true">
 
                     </i>
                 </div>
@@ -62,16 +66,15 @@
         </section>
         <div class="results-message">
         </div>
-        <div class="appartements-list">
+        <div id="appartements-list" class="appartements-list">
             <div class="city">
-                <h3>Hebergements a Marseille</h3>
+                <h2><strong>Hébergements à Marseille</strong></h2>
                 <div class="city-appartement-list">
                     <div class="appartement-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                            alt="canebiere">
-                        <h3>auberge de la canebiere</h3>
+                        <img src="./assets/auberge-de-la-canebiere.jpg" alt="canebiere">
+                        <h3>Auberge de la canebiere</h3>
                         <p>nuit à partir de <strong>25€</strong></p>
-                        <p class="stars">
+                        <p class="stars down">
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
@@ -80,11 +83,10 @@
                         </p>
                     </div>
                     <div class="appartement-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                            alt="canebiere">
-                        <h3>hotel du port</h3>
+                        <img src="./assets/hotel-du-port.jpg" alt="canebiere">
+                        <h3>Hotel du port</h3>
                         <p>nuit à partir de <strong>52€</strong></p>
-                        <p class="stars">
+                        <p class="stars down">
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
@@ -93,11 +95,10 @@
                         </p>
                     </div>
                     <div class="appartement-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                            alt="canebiere">
+                        <img src="./assets/hotel-les-mouettes.jpg" alt="canebiere">
                         <h3>Hotel les mouettes</h3>
                         <p>nuit à partir de <strong>76€</strong></p>
-                        <p class="stars">
+                        <p class="stars down ">
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
@@ -106,11 +107,10 @@
                         </p>
                     </div>
                     <div class="appartement-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                            alt="canebiere">
-                        <h3>auberge de la mer</h3>
+                        <img src="./assets/auberge-de-la)mer.jpg" alt="canebiere">
+                        <h3>Auberge de la mer</h3>
                         <p>nuit à partir de <strong>46€</strong></p>
-                        <p class="stars">
+                        <p class="stars down">
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
@@ -119,11 +119,10 @@
                         </p>
                     </div>
                     <div class="appartement-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                            alt="canebiere">
-                        <h3>auberge le panier</h3>
+                        <img src="./assets/auberge-le-panier.jpg" alt="canebiere">
+                        <h3>Auberge le panier</h3>
                         <p>nuit à partir de <strong>23€</strong></p>
-                        <p class="stars">
+                        <p class="stars down">
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
@@ -132,11 +131,10 @@
                         </p>
                     </div>
                     <div class="appartement-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                            alt="canebiere">
-                        <h3>hotel chez Amina</h3>
+                        <img src="./assets/hotel-chez-amina.jpg" alt="canebiere">
+                        <h3>Hotel chez Amina</h3>
                         <p>nuit à partir de <strong>96€</strong></p>
-                        <p class="stars">
+                        <p class="stars down">
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
@@ -148,33 +146,31 @@
                 <a href="">afficher plus</a>
             </div>
             <div class="popular">
-                <h3>Les Plus Populaires
+                <h2>Les Plus Populaires
                     <i class="fas fa-chart-line"></i>
-                </h3>
+                </h2>
                 <div class="popular-flex">
                     <div class="appartement-card popular-card">
 
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="soleil du matin">
+                        <img src="./assets/hotel-le-soleil-matin.jpg" alt="soleil du matin">
                         <div class="popular-description">
                             <h3>Hotel le soleil du matin</h3>
-                            <p>nuit à partir de <strong>25€</strong></p>
-                            <p class="stars">
+                            <p>nuit à partir de <strong>128€</strong></p>
+                            <p class="stars down">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star grey"></i>
+                                <i class="fas fa-star blue"></i>
                             </p>
                         </div>
                     </div>
                     <div class="appartement-card popular-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                            alt="canebiere">
+                        <img src="./assets/au-coeur-de-leau.jpg" alt="canebiere">
                         <div class="popular-description">
                             <h3>Au coeur de l'eau chambres d'hotes</h3>
-                            <p>nuit à partir de <strong>25€</strong></p>
-                            <p class="stars">
+                            <p>nuit à partir de <strong>71€</strong></p>
+                            <p class="stars down">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -184,12 +180,11 @@
                         </div>
                     </div>
                     <div class="appartement-card popular-card">
-                        <img src="https://reservia.mathisbarre.com/img/hosting/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            alt="canebiere">
+                        <img src="./assets/hotel-tout-bleu-et-blanc.jpg" alt="canebiere">
                         <div class="popular-description">
                             <h3>Hotel tout bleu et blanc</h3>
-                            <p>nuit à partir de <strong>25€</strong></p>
-                            <p class="stars">
+                            <p>nuit à partir de <strong>68€</strong></p>
+                            <p class="stars down">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -201,41 +196,41 @@
                 </div>
             </div>
         </div>
-        <div class="activitemarseille">
-            <h3>activités a Marseille</h3>
+        <div id="activitemarseille" class="activitemarseille">
+            <h2>Activités à Marseille</h2>
         </div>
         <div class="activities-list">
             <div class="big big1">
-                <h3>vieux port</h3>
+                <h3>Vieux port</h3>
             </div>
             <div class="medium1">
-                <h3>fort de promegues</h3>
+                <h3>Fort de promègues</h3>
             </div>
             <div class="small1">
-                <h3>ile du Frioul</h3>
+                <h3>Ile du Frioul</h3>
             </div>
             <div class="big big2">
                 <h3>Parc National des Calanques</h3>
             </div>
             <div class="small2">
-                <h3>notre-Dame-de-la-Garde</h3>
+                <h3>Notre-Dame-de-la-Garde</h3>
             </div>
             <div class="medium2">
-                <h3>parclongchamp</h3>
+                <h3>Parc long champ</h3>
             </div>
         </div>
     </main>
 
     <footer>
         <div>
-            <h4>propos</h4>
+            <h4>Propos</h4>
             <p>Fonctionnement du site</p>
-            <p> generales de vente</p>
-            <p>donnees et confidentialites</p>
+            <p> Générales de vente</p>
+            <p>données et confidentialités</p>
         </div>
         <div>
-            <h4>Nos Hebergements</h4>
-            <p>Charte qualite</p>
+            <h4>Nos Hébergements</h4>
+            <p>Charte qualité</p>
             <p>Soumettre votre hotel</p>
         </div>
         <div>

@@ -43,6 +43,8 @@ main {
   grid-gap: 1rem;
   margin-bottom: 5rem;
   justify-content: space-between;
+  max-height: 40rem;
+
 }
 .activitemarseille {
   padding: 2rem 0;
@@ -51,62 +53,73 @@ main {
   border: 1px;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   background-position: center;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   transition: transform 200ms;
-  min-width: 16rem;
+  min-width: 10rem;
 }
 .activities-list > div:hover {
   transform: scale(1.02);
 }
-.big {
-  height: 30rem;
+.dimention-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    max-width: 100%;
 }
 .big1 {
   grid-row: 1 / -1;
-  background-image: url("./assets/vieux-port.jpg");
+  grid-column: 1/2;
 }
 .big2 {
   grid-column: 3 / 4;
   grid-row: 1 / -1;
-  background-image: url("./assets/parc-national-des-calanques.jpg");
 }
 .medium1 {
   grid-row: 1 /4;
-  background-image: url("./assets/fort-de-promegue.jpg");
 }
 .medium2 {
   grid-column: 4/-1;
   grid-row: 3/-1;
-  background-image: url("./assets/parc-longchamp.jpg");
 }
 .small1 {
-  grid-column: 2 / 2;
+  grid-column: 2 / 3;
   grid-row: 4 / -1;
-  background-image: url("./assets/ile-dufrioul.jpg");
 }
 .small2 {
-  grid-column: 4/4;
+  grid-column: 4/5;
   grid-row: 1 / 3;
-  background-image: url("./assets/notre-dame.jpg");
 }
 .activities-list h3 {
   margin-top: auto;
   margin-bottom: 0;
-  width: 100%;
   padding: 1rem;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
 }
-@media (max-width: 1100px) {
+.small {
+    max-height: 80%;
+}
+.medium1{
+    max-height: 86%;
+}
+@media (max-width: 1200px) {
   .activities-list {
     grid-template-rows: repeat(auto-fit, 15rem);
+    max-height: none;
+    justify-content: center;
   }
   .activities-list > * {
     grid-column: span 1;
     grid-row: span 1;
+  }
+  .dimention-image{
+    max-height: 12rem;
     height: 15rem;
   }
 }

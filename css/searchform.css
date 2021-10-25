@@ -18,8 +18,8 @@
   overflow: auto;
 }
 .search-form button {
-  background-color: rgb(45, 45, 231);
-  color: white;
+  background-color: #0065fc;
+  color: var(--lightwhite);
   font-weight: bold;
   border-radius: 0 1rem 1rem 0;
   border: none;
@@ -34,7 +34,7 @@
 .fas.fa-search {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 668px) {
   .search-form .search-text {
     display: none;
   }
@@ -50,28 +50,28 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
-@media (max-width: 992px){
-    .filtrerecherche h2{
-        flex-basis: 100%;
-    }
+@media (max-width: 992px) {
+  .filtrerecherche h2 {
+    flex-basis: 100%;
+  }
 }
 .fas.fa-money-bill-wave {
-  color: blue;
-  background-color: lightblue;
+  color: #0065fc;
+  background-color: #deebff;
   padding: 1rem;
   border-radius: 50%;
   margin: -2px;
 }
 .recherchecondition {
-  border: 2px solid lightgrey;
+  border: 2px solid #deebff;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   transition: all 200ms;
 }
 .fas.fa-child {
-  color: blue;
-  background-color: lightblue;
+  color: #0065fc;
+  background-color: #deebff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,15 +81,15 @@
   height: 3rem;
 }
 .fas.fa-heart {
-  color: blue;
-  background-color: lightblue;
+  color: #0065fc;
+  background-color: #deebff;
   padding: 1rem;
   border-radius: 50%;
   margin: -2px;
 }
 .fas.fa-dog {
-  color: blue;
-  background-color: lightblue;
+  color: #0065fc;
+  background-color: #deebff;
   padding: 1rem;
   border-radius: 50%;
   margin: -2px;
@@ -109,7 +109,7 @@
   gap: 1rem;
 }
 .resultatrecherche .fas {
-  color: blue;
+  color: #0065fc;
   width: 2rem;
   height: 2rem;
   border: 1px solid lightgrey;

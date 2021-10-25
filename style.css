@@ -6,6 +6,8 @@
 /* navbarr */
 
 :root {
+  --blue: #0065fc;
+  --lightwhite: #ffffff;
   --lightblue: #deebff;
   --lighterblue: #f3f8ff;
   --lightgray: #f2f2f2;
@@ -44,7 +46,6 @@ main {
   margin-bottom: 5rem;
   justify-content: space-between;
   max-height: 40rem;
-
 }
 .activitemarseille {
   padding: 2rem 0;
@@ -64,12 +65,12 @@ main {
 .activities-list > div:hover {
   transform: scale(1.02);
 }
-.dimention-image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-    max-width: 100%;
+.dimention-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  max-width: 100%;
 }
 .big1 {
   grid-row: 1 / -1;
@@ -83,7 +84,6 @@ main {
   grid-row: 1 /4;
 }
 .medium2 {
-  grid-column: 4/-1;
   grid-row: 3/-1;
 }
 .small1 {
@@ -100,15 +100,16 @@ main {
   padding: 1rem;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+  box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px,
+    rgb(0 0 0 / 6%) 0px 0px 0px 1px;
 }
 .small {
-    max-height: 80%;
+  max-height: 80%;
 }
-.medium1{
-    max-height: 86%;
+.medium1 {
+  max-height: 86%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .activities-list {
     grid-template-rows: repeat(auto-fit, 15rem);
     max-height: none;
@@ -118,8 +119,13 @@ main {
     grid-column: span 1;
     grid-row: span 1;
   }
-  .dimention-image{
+  .dimention-image {
     max-height: 12rem;
     height: 15rem;
+  }
+}
+@media (max-width: 1300px) {
+  .small {
+    min-height: 100%;
   }
 }

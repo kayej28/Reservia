@@ -1,5 +1,5 @@
 .navbarre {
-  border: 1px solid white;
+  border: 1px solid var(--lightwhite);
   justify-content: flex-end;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
   margin-right: auto;
 }
 .navlink[data-active="true"] {
-  border-top: 3px solid #0065fc;
+  border-top: 3px solid var(--blue);
 }
 .navlink {
   padding: 2rem;
@@ -38,12 +38,12 @@ nav a {
   border-top: 3px solid transparent;
 }
 nav a:hover {
-  border-top-color: #0065fc;
+  border-top-color: var(--blue);
 }
 .sub-nav a:hover {
-  border-bottom-color: 3px solid #0065fc;
+  border-bottom-color: 3px solid var(--blue);
 }
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .sub-nav {
     order: 1;
     flex-basis: 100%;
@@ -53,7 +53,7 @@ nav a:hover {
     text-align: center;
   }
   .sub-nav a:hover {
-    border-bottom: 3px solid #0065fc;
+    border-bottom: 3px solid var(--blue);
     border-top-color: transparent;
   }
 }

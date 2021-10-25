@@ -1,5 +1,5 @@
 footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -9,8 +9,11 @@ footer {
 footer > * {
   flex-basis: 20%;
 }
-@media (max-width: 500px){
-    footer{
-        flex-direction: column;
-    }
+@media (max-width: 668px) {
+  footer {
+    flex-direction: column;
+  }
+  .propriete-footer {
+    margin-left: 4rem;
+  }
 }

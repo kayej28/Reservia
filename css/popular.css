@@ -1,6 +1,7 @@
 .appartements-list {
   display: flex;
   gap: 5rem;
+  padding: 0 2rem;
 }
 .appartements-list div {
   border-radius: 1rem;
@@ -66,6 +67,7 @@
   opacity: 0.9;
   transition: transform 200ms;
   flex-basis: 30%;
+  font-size: 1rem;
 }
 .appartement-card:hover {
   opacity: 1;
@@ -124,6 +126,7 @@
 @media (max-width: 992px) {
   .appartements-list {
     flex-direction: column;
+    padding: inherit;
   }
   .appartements-list .popular-flex {
     flex-wrap: wrap;
@@ -134,9 +137,21 @@
   .popular {
     order: -1;
   }
+  .appartements-list .city {
+    background: none;
+  }
+  .appartements-list .popular {
+    border-radius: inherit;
+  }
 }
 @media (max-width: 768px) {
   .city-appartement-list {
     flex-direction: column;
+  }
+  .appartements-list h3 {
+    font-size: 0.8rem;
+  }
+  .appartement-card {
+    font-size: 0.8rem;
   }
 }

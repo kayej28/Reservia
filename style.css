@@ -30,7 +30,6 @@ body {
 main {
   max-width: 1440px;
   margin: auto;
-  padding: 0 2rem;
 }
 .header h1,
 .header p {
@@ -46,9 +45,10 @@ main {
   margin-bottom: 5rem;
   justify-content: space-between;
   max-height: 40rem;
+  padding: 0 2rem;
 }
 .activitemarseille {
-  padding: 2rem 0;
+  padding: 2rem 30px;
 }
 .activities-list > * {
   border: 1px;
